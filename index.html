@@ -2,30 +2,33 @@
 
 <head>
     <title>fredrikgoetzinger.net</title>
+    <script type="text/javascript" src="./js/main.js"></script>
 </head>
 
-<body>
+<body onload="replaceHtml('main_text', './html/about_me/aboutme.html')">
     <header>
-        fredrikgoetzinger.net - my personal space on internet.
+        <h1>fredrikgoetzinger.name - my personal playground.</h1>
     </header>
     
     <nav>
         <ul>
-            <li>about me</li>
-            <li>my notes</li>
-            <li>my projects</li>
+            <li><a href="./html/about_me/aboutme.html" onclick="replaceHtml('main_text', './html/about_me/aboutme.html');return false;">about me</a></li>
+            <li><a href="./html/about_this_site/aboutthissite.html" onclick="replaceHtml('main_text', './html/about_this_site/aboutthissite.html');return false;">about this site</a></li>
+            <li><a href="./html/my_notes/notes.html" onclick="replaceHtml('main_text', './html/my_notes/notes.html');return false;">my notes</a></li>
         </ul>
     </nav>
     
-    <article></article>
+    <article id="main_text">
+
+    </article>
     
     <aside></aside>
     
     <footer>
         <ul>
-            <li>privacy policy</li>
-            <li>disclaimer</li>
-            <li>contact me</li>
+            <li><a href="./html/privacy_policy/privacypolicy.html">privacy policy</a></li>
+            <li><a href="./html/disclaimer/disclaimer.html">disclaimer</a></li>
+            <li><a href="./html/contact_me/contactme.html">contact me</a></li>
         </ul>
     </footer>
     
